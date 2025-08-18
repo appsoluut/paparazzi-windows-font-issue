@@ -2,6 +2,10 @@
 
 Sample code to reproduce the issue with Paparazzi Windows custom font rendering.
 
+| Expected                                                                                             | Current                                                                                     |
+|------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
+| ![Expected](https://github.com/appsoluut/paparazzi-windows-font-issue/blob/main/images/expected.png) | ![Current](https://github.com/appsoluut/paparazzi-windows-font-issue/blob/main/images/current.png) |
+
 ## Reproduction Steps
 
 1. Validate the snapshots
