@@ -9,10 +9,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.TextStyle
-import androidx.compose.ui.text.font.Font
-import androidx.compose.ui.text.font.FontFamily
-import androidx.compose.ui.text.font.FontStyle
-import androidx.compose.ui.text.font.FontWeight
+import app.appsoluut.typography.GreatVibes
 
 @Composable
 fun CustomFont() {
@@ -27,7 +24,3 @@ fun CustomFont() {
         }
     }
 }
-
-val GreatVibes = FontFamily(
-    Font(resId = R.font.great_vibes_regular, weight = FontWeight.Normal, FontStyle.Normal),
-)

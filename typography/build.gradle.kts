@@ -1,24 +1,18 @@
 plugins {
-    alias(libs.plugins.android.application)
+    alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
-    alias(libs.plugins.paparazzi.android)
     alias(libs.plugins.compose.compiler)
 }
 
 android {
-    namespace = "app.appsoluut.paparazzi"
+    namespace = "app.appsoluut.typography"
     //noinspection GradleDependency // paparazzi requires compileSdk 35 for now
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "app.appsoluut.paparazzi"
         minSdk = 21
         //noinspection OldTargetApi // paparazzi requires compileSdk 35 for now
         targetSdk = 35
-        versionCode = 1
-        versionName = "1.0"
-
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
@@ -43,17 +37,6 @@ android {
 }
 
 dependencies {
-    implementation(project(":typography"))
-
     implementation(platform(libs.compose.bom))
-    implementation(libs.compose.ui)
     implementation(libs.compose.foundation)
-    implementation(libs.compose.material)
-
-    implementation(libs.androidx.core.ktx)
-    implementation(libs.androidx.appcompat)
-    implementation(libs.material)
-    testImplementation(libs.junit)
-    androidTestImplementation(libs.androidx.junit)
-    androidTestImplementation(libs.androidx.espresso.core)
 }

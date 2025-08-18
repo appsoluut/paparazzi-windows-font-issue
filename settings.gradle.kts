@@ -21,4 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "Paparazzi Windows Font"
 include(":app")
- 
+include(":typography")
